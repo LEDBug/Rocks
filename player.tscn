@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3ucf05kclj4v"]
+
+[ext_resource type="Script" uid="uid://cfspmu2wdcwdp" path="res://player.gd" id="1_4flbx"]
+
+[node name="Player" type="Polygon2D"]
+offset = Vector2(-10, 0)
+antialiased = true
+script = ExtResource("1_4flbx")
