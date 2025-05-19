@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b517k7r4dj0xp"]
+
+[ext_resource type="Script" uid="uid://jj6vo4rhomu7" path="res://rocks.gd" id="1_hta28"]
+
+[node name="Rocks" type="Node2D"]
+script = ExtResource("1_hta28")
+shape = "CI"
