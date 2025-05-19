@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://0obj75i1rftb"]
+
+[ext_resource type="Script" uid="uid://bfijnccelpq0d" path="res://rock.gd" id="1_o0qsl"]
+
+[node name="Rock" type="Node2D"]
+script = ExtResource("1_o0qsl")
+shape = 1
+line_width = 5
+rotation_speed = 3
