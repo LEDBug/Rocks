@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkwx4xex5p6al"]
+
+[ext_resource type="Shader" uid="uid://bxhhk8ogbp1l0" path="res://shaders/flame.gdshader" id="1_0e0p7"]
+[ext_resource type="Script" uid="uid://dfi34357hstbv" path="res://jet.gd" id="1_4k85g"]
+[ext_resource type="Texture2D" uid="uid://du3m35dqdq43f" path="res://images/white_circle.png" id="2_4k85g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ac333"]
+shader = ExtResource("1_0e0p7")
+shader_parameter/inner_color = Vector4(1, 1, 0, 1)
+shader_parameter/outer_color = Vector4(1, 0, 0, 0)
+shader_parameter/radius = 1.0
+
+[node name="Jet" type="Polygon2D"]
+color = Color(0.049524, 0.369621, 0.533974, 1)
+script = ExtResource("1_4k85g")
+force = 0.5
+
+[node name="Flame" type="Sprite2D" parent="."]
+z_index = -1
+material = SubResource("ShaderMaterial_ac333")
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("2_4k85g")
