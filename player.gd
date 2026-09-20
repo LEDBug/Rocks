@@ -58,9 +58,8 @@ func move(delta):
 		velocity = velocity.normalized()*max_speed
 	
 	position += velocity * delta
+	
 	 # Wrap-around logic: check if the object is out of bounds
-	
-	
 	if position.x < -wrap_border:
 		position.x = screen_size.x+wrap_border  # Wrap to the right side
 	elif position.x > screen_size.x+wrap_border:
